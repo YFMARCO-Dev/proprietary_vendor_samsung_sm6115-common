@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6115-common/proprietary/recovery/root/vendor/firmware/novatek_ts_mp_lce_panda.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_lce_panda.bin \
     vendor/samsung/sm6115-common/proprietary/recovery/root/vendor/firmware/novatek_ts_mp_lide_hsd.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_lide_hsd.bin \
     vendor/samsung/sm6115-common/proprietary/recovery/root/vendor/firmware/novatek_ts_mp_txd_inx.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp_txd_inx.bin \
+    vendor/samsung/sm8250-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Global_cal.acdb \
@@ -104,7 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
-    vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/samsung/sm6115-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
@@ -696,7 +696,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     com.qualcomm.qti.ant@1.0-impl \
     gatekeeper.mdfpp \
-    vendor.qti.hardware.alarm@1.0-impl \
     libadaptlaunch \
     libaidenoiser \
     libcamera2ndk_vendor \
@@ -753,11 +752,12 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libscveT2T_skel_so \
     com.qualcomm.qti.ant@1.0 \
     TimeService \
-    PowerOffAlarm \
+    audiosphere \
     android.hardware.gnss@2.1-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vaultkeeper_manifest.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
+    adpl \
     adsprpcd \
     cdsprpcd \
     chifeature2test \
@@ -767,10 +767,13 @@ PRODUCT_PACKAGES += \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
+    android.hardware.gatekeeper@1.0-service \
     android.hardware.gnss@2.1-service-qti \
+    android.hardware.keymaster@4.0-service \
+    android.hardware.neuralnetworks@1.3-service-qti \
     macloader \
+    rild \
     vendor.display.color@1.0-service \
-    vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
@@ -778,6 +781,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.samsung.hardware.thermal@1.0-service \
     irsc_util \
+    ks \
+    netmgrd \
     loc_launcher \
     lowi-server \
     mlid \
@@ -785,7 +790,6 @@ PRODUCT_PACKAGES += \
     pd-mapper \
     pm-proxy \
     pm-service \
-    power_off_alarm \
     ppd \
     qdcmss \
     qrtr-ns \
@@ -795,6 +799,9 @@ PRODUCT_PACKAGES += \
     sscrpcd \
     ssgqmigd \
     ssgtzd \
+    ssr_diag \
+    ssr_setup \
+    subsystem_ramdump \
     tftp_server \
     thermal-engine \
     time_daemon \
