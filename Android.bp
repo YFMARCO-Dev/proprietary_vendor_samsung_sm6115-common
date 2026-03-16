@@ -14750,6 +14750,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.neuralnetworks@1.3-service-qti.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
@@ -15719,6 +15728,51 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "netmgrd",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/netmgrd",
+            ],
+            shared_libs: [
+                "libdsutils",
+                "libconfigdb",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libnetutils",
+                "librmnetctl",
+                "libnlnetmgr",
+                "libnetmgr",
+                "libnetmgr_common",
+                "libqmiservices",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_client_qmux",
+                "libqmi_client_helper",
+                "libqmi",
+                "libutils",
+                "libhidlbase",
+                "libandroid_net",
+                "android.system.net.netd@1.1",
+                "libqti_vndfwk_detect",
                 "libc++",
                 "libc",
                 "libm",
