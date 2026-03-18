@@ -412,6 +412,7 @@ PRODUCT_PACKAGES += \
     libSecureUILib \
     libStDrvInt \
     libVkLayer_q3dtools \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -425,6 +426,17 @@ PRODUCT_PACKAGES += \
     libbitmlengine \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    libhdmiedid \
+    libhdmipassthru \
+    libhfp \
+    libmulawdec \
     libbtnv \
     libc2d30_bltlib \
     libcamera_nn_stub \
@@ -480,6 +492,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket \
+    libnative-api \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmmosal \
@@ -487,6 +500,7 @@ PRODUCT_PACKAGES += \
     libofflinelog \
     libops \
     libpdmapper \
+    libpdnotifier \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
@@ -497,6 +511,7 @@ PRODUCT_PACKAGES += \
     libqcci_legacy \
     libqcmaputils \
     libqdi \
+    libqdp \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -504,6 +519,7 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmi_common_so \
     libqmi_csi \
+    libqmi_csvt_srvc \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
@@ -529,6 +545,7 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsecaudiocoreutils \
     libsecnativefeature \
+    libsi \
     libsecureui \
     libsecureui_svcsock \
     libsemnativecarrierfeature \
@@ -543,9 +560,11 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libsoc_helper \
     libspeakercalibration \
+    libspkrprot \
     libssc \
     libssc_default_listener \
     libssd \
+    libsystem_health_mon \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsysmon_cdsp_skel \
@@ -557,6 +576,7 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     sensors.ssc \
     libasphere \
+    libaudioeffectoffload \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
@@ -581,7 +601,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.latency@2.0 \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
@@ -591,16 +613,23 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.samsung.hardware.gnss@2.0 \
+    btaudio_offload_if \
     audio.primary.bengal \
     libadm \
+    libadpcmdec \
     libaudio_log_utils \
+    libaudioconfigstore \
+    libaudioparsers \
+    libbatterylistener \
     libcpion \
     libfastcrc \
     libhdcpsrm \
     liboemcrypto \
     libsecaudioinfo \
+    libsndmonitor \
     libsurround_3mic_proc \
     libtrustedapploader \
+    libtzdrmgenprov \
     libwvhidl \
     libwvdrmengine \
     com.qti.eeprom.irs2381c_polar \
@@ -766,6 +795,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmctfengine_skel_so \
     vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
     vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
     com.qualcomm.qti.ant@1.0 \
     TimeService \
     audiosphere \
