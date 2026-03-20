@@ -389,6 +389,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     camera.qcom \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -448,6 +449,9 @@ PRODUCT_PACKAGES += \
     libcamxstatscore \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
     libcdsp_default_listener \
@@ -455,15 +459,18 @@ PRODUCT_PACKAGES += \
     libchilog \
     libcom.qti.chinodeutils \
     libconfigdb \
+    libcpion \
     libdataitems \
     libdiag \
     libdiagjni \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
+    libdpps \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
+    libengmode_client \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -475,7 +482,9 @@ PRODUCT_PACKAGES += \
     libgpudataproducer \
     libgsl \
     libhdr_tm \
+    libhexagon_nn_stub \
     libidl \
+    libipebpsstriping \
     libizat_client_api \
     libizat_core \
     liblbs_core \
@@ -493,24 +502,31 @@ PRODUCT_PACKAGES += \
     libminkdescriptor \
     libminksocket \
     libnative-api \
+    liboemcrypto \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmmosal \
     libnetmgr \
+    libnetmgr_common \
+    libnlnetmgr \
     libofflinelog \
+    libpadm \
+    libperipheral_client \
+    libqmiservices-sem-ext \
     libops \
     libpdmapper \
+    libpdnotifier \
     libpdnotifier \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
-    libperipheral_client \
     libprofileparamstorage \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \
     libqcmaputils \
     libqdi \
+    libqdp \
     libqdp \
     libqisl \
     libqmi \
@@ -525,6 +541,7 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqrtr \
     libqseed3 \
+    libqtikeymaster4 \
     libqsocket \
     libqti-perfd-client \
     libqti-perfd \
@@ -539,6 +556,7 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdm-color \
+    libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
@@ -570,9 +588,11 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libthermalclient \
     libtime_genoff \
+    libtrustedapploader \
     libtinyxml2_1 \
     libwingmetamanager \
     libxml \
+
     libxtadapter \
     sensors.ssc \
     libasphere \
@@ -628,7 +648,6 @@ PRODUCT_PACKAGES += \
     libsecaudioinfo \
     libsndmonitor \
     libsurround_3mic_proc \
-    libtrustedapploader \
     libtzdrmgenprov \
     libwvhidl \
     libwvdrmengine \
@@ -755,6 +774,7 @@ PRODUCT_PACKAGES += \
     libkeymaster_helper \
     libkeymasterdeviceutils \
     libkeymasterutils \
+    libloadalgo_stub \
     liblearningmodule \
     liblmutils-ns \
     libmctfengine_stub \
@@ -776,8 +796,11 @@ PRODUCT_PACKAGES += \
     libstork_shared \
     libvkmanager_vendor \
     libvkservice \
-    vendor.qti.hardware.alarm@1.0 \
+    unnhal-acc-adreno \
+    unnhal-acc-common \
+    unnhal-acc-hvx \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
+    vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.samsung.frameworks.security.dsms@1.0 \
     vendor.samsung.hardware.hyper-V2-ndk_platform \

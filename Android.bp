@@ -357,6 +357,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.gatekeeper@1.0-impl-qti",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
+            ],
+            shared_libs: [
+                "android.hardware.gatekeeper@1.0",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libutils",
+                "libkeymasterdeviceutils",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.gnss@2.1-impl-qti",
     owner: "samsung",
     strip: {
@@ -2659,6 +2692,84 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcapiv2svacnn",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcapiv2svacnn.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcapiv2svarnn",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcapiv2svarnn.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcapiv2vop",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcapiv2vop.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcdfw",
     owner: "samsung",
     strip: {
@@ -2950,6 +3061,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcpion",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcpion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcpion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdataitems",
     owner: "samsung",
     strip: {
@@ -3194,6 +3344,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdpps",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdpps.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdisp-aba",
+                "libqdutils",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libdrm",
+                "libtinyxml2-v34",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdrmfs",
     owner: "samsung",
     strip: {
@@ -3344,6 +3528,34 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libengmode_client",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libengmode_client.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -3828,6 +4040,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhexagon_nn_stub",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhexagon_nn_stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libidl",
     owner: "samsung",
     strip: {
@@ -3858,6 +4097,37 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libipebpsstriping",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libipebpsstriping.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libcdsprpc",
+                "libqdMetaData",
+                "libhardware",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4626,6 +4896,59 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libcpion",
+                "libminkdescriptor",
+                "libcutils",
+                "libtrustedapploader",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libcpion",
+                "libminkdescriptor",
+                "libcutils",
+                "libtrustedapploader",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_faceproc",
     owner: "samsung",
     strip: {
@@ -4785,6 +5108,69 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnetmgr_common",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnetmgr_common.so",
+            ],
+            shared_libs: [
+                "libdsutils",
+                "libconfigdb",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libnetmgr",
+                "libqmi_cci",
+                "libqmiservices",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnlnetmgr",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnlnetmgr.so",
+            ],
+            shared_libs: [
+                "libdsutils",
+                "libconfigdb",
+                "libdiag",
+                "libcutils",
+                "liblog",
+                "libnetmgr",
+                "libnetmgr_common",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libofflinelog",
     owner: "samsung",
     strip: {
@@ -4823,6 +5209,33 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpadm",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpadm.so",
+            ],
+            shared_libs: [
+                "libsavscmn",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4910,6 +5323,53 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libjson",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_encdec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpdnotifier",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpdnotifier.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_encdec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpdnotifier.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libqmi_encdec",
@@ -5145,6 +5605,33 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libqmiservices-sem-ext",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmiservices-sem-ext.so",
+            ],
+            shared_libs: [
+                "libidl",
+                "libqmiservices",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 
 cc_prebuilt_library_shared {
     name: "libprofileparamstorage",
@@ -5406,6 +5893,55 @@ cc_prebuilt_library_shared {
                 "libqmi_client_helper",
                 "libqmi",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqdp",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqdp.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libcutils",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqdp.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libcutils",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_helper",
                 "libc++",
                 "libc",
                 "libm",
@@ -5830,6 +6366,55 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqmi_csvt_srvc",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqmi_csvt_srvc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdiag",
+                "libqmi_legacy",
+                "libqmiservices",
+                "libqcci_legacy",
+                "libqmi_client_qmux",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_csvt_srvc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdiag",
+                "libqmi_legacy",
+                "libqmiservices",
+                "libqcci_legacy",
+                "libqmi_client_qmux",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqmi_encdec",
     owner: "samsung",
     strip: {
@@ -6020,6 +6605,41 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqtikeymaster4",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqtikeymaster4.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcrypto",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libkeymasterdeviceutils",
+                "libkeymasterutils",
+                "libbase",
+                "libqcbor",
+                "android.hardware.keymaster@4.0",
+                "android.hardware.keymaster@4.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6623,6 +7243,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsdm-colormgr-algo",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdm-colormgr-algo.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsdm-diag",
     owner: "samsung",
     strip: {
@@ -6807,6 +7453,65 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsec-ril",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsec-ril.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libril_sem",
+                "libnetutils",
+                "libsqlite",
+                "libhardware_legacy",
+                "libcrypto",
+                "librilutils",
+                "libxml2",
+                "libz",
+                "libutils",
+                "libjsoncpp",
+                "libSemTelephonyProps",
+                "libSemDataProps",
+                "libvkmanager_vendor",
+                "libengmode_client",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.samsung.hardware.radio.channel-V1-ndk",
+                "libsecnativefeature",
+                "libfloatingfeature",
+                "libsemnativecarrierfeature",
+                "libnlnetmgr",
+                "libtime_genoff",
+                "libmdmdetect",
+                "libdsutils",
+                "librmnetctl",
+                "libconfigdb",
+                "libperipheral_client",
+                "libqmi_cci",
+                "libqmi_client_helper",
+                "libqmi_common_so",
+                "libqmi_encdec",
+                "libdiag",
+                "libc++",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsecaudiocoreutils",
     owner: "samsung",
     strip: {
@@ -6870,6 +7575,51 @@ cc_prebuilt_library_shared {
                 "libexpat",
                 "libcutils",
                 "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsi",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsi.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libpng",
+                "libQSEEComAPI",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsi.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libpng",
+                "libQSEEComAPI",
                 "libc++",
                 "libc",
                 "libm",
@@ -8071,6 +8821,49 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libdiag",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.latency@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
                 "libcutils",
                 "libc++",
                 "libc",
@@ -10717,11 +11510,27 @@ cc_prebuilt_library_shared {
                 "libdl",
             ],
         },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtrustedapploader.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminkdescriptor",
+                "libminksocket",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
     },
-    compile_multilib: "32",
+    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "libtzdrmgenprov",
@@ -14321,38 +15130,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.alarm@1.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "vendor.qti.hardware.alarm@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libadaptlaunch",
     owner: "samsung",
     strip: {
@@ -14776,6 +15553,31 @@ cc_prebuilt_library_shared {
                 "libQSEEComAPI",
                 "liblog",
                 "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloadalgo_stub",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libloadalgo_stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
                 "libc++",
                 "libc",
                 "libm",
@@ -15420,7 +16222,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.alarm@1.0",
+    name: "unnhal-acc-adreno",
     owner: "samsung",
     strip: {
         none: true,
@@ -15428,13 +16230,86 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so",
+                "proprietary/vendor/lib64/unnhal-acc-adreno.so",
             ],
             shared_libs: [
+                "liblog",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "unnhal-acc-common",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/unnhal-acc-common.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libhardware",
                 "libhidlbase",
+                "libhidlmemory",
+                "libui",
+                "liblog",
+                "libnativewindow",
+                "libutils",
+                "libcutils",
+                "libfmq",
+                "android.hardware.neuralnetworks@1.0",
+                "android.hardware.neuralnetworks@1.1",
+                "android.hardware.neuralnetworks@1.2",
+                "android.hardware.neuralnetworks@1.3",
+                "android.hidl.safe_union@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "unnhal-acc-hvx",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/unnhal-acc-hvx.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libhardware",
+                "libhidlbase",
+                "libhidlmemory",
                 "liblog",
                 "libutils",
                 "libcutils",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libcdsprpc",
                 "libc++",
                 "libc",
                 "libm",
@@ -15472,6 +16347,34 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "vendor.qti.hardware.camera.postproc@1.0",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.cvp@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
