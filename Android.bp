@@ -5607,33 +5607,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqmiservices-sem-ext",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmiservices-sem-ext.so",
-            ],
-            shared_libs: [
-                "libidl",
-                "libqmiservices",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-
-cc_prebuilt_library_shared {
     name: "libprofileparamstorage",
     owner: "samsung",
     strip: {
@@ -7448,65 +7421,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsec-ril",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsec-ril.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libril_sem",
-                "libnetutils",
-                "libsqlite",
-                "libhardware_legacy",
-                "libcrypto",
-                "librilutils",
-                "libxml2",
-                "libz",
-                "libutils",
-                "libjsoncpp",
-                "libSemTelephonyProps",
-                "libSemDataProps",
-                "libvkmanager_vendor",
-                "libengmode_client",
-                "libbase",
-                "libbinder_ndk",
-                "vendor.samsung.hardware.radio.channel-V1-ndk",
-                "libsecnativefeature",
-                "libfloatingfeature",
-                "libsemnativecarrierfeature",
-                "libnlnetmgr",
-                "libtime_genoff",
-                "libmdmdetect",
-                "libdsutils",
-                "librmnetctl",
-                "libconfigdb",
-                "libperipheral_client",
-                "libqmi_cci",
-                "libqmi_client_helper",
-                "libqmi_common_so",
-                "libqmi_encdec",
-                "libdiag",
-                "libc++",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
