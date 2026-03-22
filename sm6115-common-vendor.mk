@@ -496,7 +496,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_faceproc2 \
     libmmosal \
     libnetmgr \
-    libnlnetmgr \
     libofflinelog \
     libpadm \
     libperipheral_client \
@@ -809,7 +808,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vaultkeeper_manifest.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
-    adpl \
     adsprpcd \
     cdsprpcd \
     chifeature2test \
@@ -833,7 +831,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.thermal@1.0-service \
     irsc_util \
     ks \
-    netmgrd \
     loc_launcher \
     lowi-server \
     mlid \
