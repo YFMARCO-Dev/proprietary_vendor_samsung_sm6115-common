@@ -379,30 +379,16 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libGPreqcancel \
-    libGPreqcancel_svc \
     libOpenCL \
     libOpenCv.camera.samsung \
-    libQSEEComAPI \
     libVkLayer_q3dtools \
     libadreno_utils \
     libaudioalsa \
     libbatching \
-    libbitmlengine \
-    libbluetooth_audio_session_qti_2_1 \
-    libbtnv \
     libc2d30_bltlib \
-    libcdfw \
-    libcdfw_remote_api \
     libcdsprpc \
-    libconfigdb \
-    libcpion \
-    libcpion \
-    libdataitems \
     libdiag \
     libdiagjni \
-    libdrmfs \
-    libdrmtime \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -414,40 +400,23 @@ PRODUCT_PACKAGES += \
     libgpudataproducer \
     libgsl \
     libidl \
-    libizat_client_api \
-    libizat_core \
-    liblbs_core \
     libllvm-glnext \
     libllvm-qcom \
-    libloc_api_v02 \
     libloc_core \
     libloc_socket \
     liblocation_api \
-    liblocationservice \
-    liblocationservice_glue \
-    liblowi_client \
     libmdmdetect \
-    libminkdescriptor \
-    libminksocket \
     libmmosal \
     libnative-api \
-    liboemcrypto \
-    liboemcrypto \
-    libops \
-    libpdmapper \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
     libq3dtools_adreno \
     libq3dtools_esx \
-    libqcbor \
-    libqcc_file_agent \
     libqcci_legacy \
-    libqcmaputils \
     libqdi \
     libqdp \
     libqdp \
-    libqisl \
     libqmi \
     libqmi_cci \
     libqmi_client_helper \
@@ -458,48 +427,17 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
-    libqrtr \
-    libqsocket \
     libqti-perfd \
     libqti-perfd-client \
     libqti-util \
     libqti-utils \
-    librpmb \
     libsecnativefeature \
-    libsensorcal \
     libsensorndkbridge \
     libsi \
     libsns_registry_skel \
-    libsoc_helper \
-    libssd \
     libsynergy_loc_api \
-    libtime_genoff \
-    libtrustedapploader \
     libtzdrmgenprov \
     libwingmetamanager \
-    libxml \
-    libxtadapter \
-    sensors.ssc \
-    vendor.qti.gnss@1.0 \
-    vendor.qti.gnss@1.1 \
-    vendor.qti.gnss@1.2 \
-    vendor.qti.gnss@2.0 \
-    vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0 \
-    vendor.qti.gnss@4.0 \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qseecom@1.0 \
-    vendor.qti.hardware.qseecom@1.0-impl \
-    vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.samsung.hardware.gnss@2.0 \
@@ -522,6 +460,7 @@ PRODUCT_PACKAGES += \
     libaudioparsers \
     libbatterylistener \
     libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
     libcirrusspkrprot \
     libcomprcapture \
     libexthwplugin \
@@ -550,6 +489,8 @@ PRODUCT_PACKAGES += \
     libswdap \
     libwvdrmengine \
     libwvhidl \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
@@ -664,12 +605,17 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0_vendor \
     gatekeeper.mdfpp \
     libGPTEE_vendor \
+    libGPreqcancel \
+    libGPreqcancel_svc \
+    libQSEEComAPI \
     libSecureUILib \
     libStDrvInt \
     libadaptlaunch \
     libadsp_default_listener \
     libadsprpc \
     libaidenoiser \
+    libbitmlengine \
+    libbtnv \
     libcamera2ndk_vendor \
     libcamera_nn_stub \
     libcamerapostproc \
@@ -687,13 +633,21 @@ PRODUCT_PACKAGES += \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
+    libcdfw \
+    libcdfw_remote_api \
     libcdsp_default_listener \
     libchilog \
     libcom.qti.chinodeutils \
+    libconfigdb \
+    libcpion \
+    libcpion \
+    libdataitems \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
     libdpps \
+    libdrmfs \
+    libdrmtime \
     libdsi_netctrl \
     libdsms_vendor \
     libgrdm \
@@ -701,17 +655,26 @@ PRODUCT_PACKAGES += \
     libhexagon_nn_stub \
     libhypervintf \
     libipebpsstriping \
+    libizat_client_api \
+    libizat_core \
     libjpege \
     libkeymaster_helper \
     libkeymasterdeviceutils \
     libkeymasterutils \
+    liblbs_core \
     liblearningmodule \
     liblmutils-ns \
     libloadalgo_stub \
+    libloc_api_v02 \
+    liblocationservice \
+    liblocationservice_glue \
+    liblowi_client \
     libmctfengine_stub \
     libmdsprpc \
     libmeters \
     libmeters-ns \
+    libminkdescriptor \
+    libminksocket \
     libmmcamera_cac3 \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
@@ -720,18 +683,29 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr_t4 \
     libmorpho_video_refiner \
     libnetmgr \
+    liboemcrypto \
+    liboemcrypto \
     libofflinelog \
     libopencv \
     libopestriping \
+    libops \
     libpadm \
+    libpdmapper \
     libperipheral_client \
+    libqcbor \
+    libqcc_file_agent \
+    libqcmaputils \
     libqdma_file_agent \
+    libqisl \
+    libqrtr \
     libqseed3 \
     libqservice \
+    libqsocket \
     libqti-iopd \
     libqti-iopd-client \
     libqtikeymaster4 \
     libreffeature \
+    librpmb \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -747,6 +721,7 @@ PRODUCT_PACKAGES += \
     libsecureui \
     libsecureui_svcsock \
     libsemnativecarrierfeature \
+    libsensorcal \
     libsensorslog \
     libskeymaster4device \
     libsns_device_mode_stub \
@@ -754,15 +729,22 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
+    libsoc_helper \
     libssc \
     libssc_default_listener \
+    libssd \
     libstork_shared \
     libswregistrationalgo \
     libsysmon_cdsp_skel \
     libthermalclient \
+    libtime_genoff \
     libtinyxml2_1 \
+    libtrustedapploader \
     libvkmanager_vendor \
     libvkservice \
+    libxml \
+    libxtadapter \
+    sensors.ssc \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
@@ -773,13 +755,31 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.qti.gnss@1.0 \
+    vendor.qti.gnss@1.1 \
+    vendor.qti.gnss@1.2 \
+    vendor.qti.gnss@2.0 \
+    vendor.qti.gnss@2.1 \
+    vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -855,12 +855,11 @@ PRODUCT_PACKAGES += \
     vaultkeeperd \
     vendor.samsung.hardware.security.vaultkeeper@2.0-service \
     wt_rpmb_status \
-    xtra-daemon
-
-PRODUCT_PACKAGES += \
+    xtra-daemon \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
+    vendor_lib64_libq3dtools_adreno_so \
+    PRODUCT_PACKAGES +=
