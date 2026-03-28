@@ -423,7 +423,6 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmi_common_so \
     libqmi_csi \
-    libqmi_csvt_srvc \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
@@ -829,7 +828,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.samsung.hardware.thermal@1.0-service \
     irsc_util \
-    ks \
     loc_launcher \
     lowi-server \
     mlid \
