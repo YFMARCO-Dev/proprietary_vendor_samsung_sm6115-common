@@ -468,7 +468,6 @@ PRODUCT_PACKAGES += \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
-    libhdcpsrm \
     libhdmiedid \
     libhdmipassthru \
     libhfp \
@@ -606,6 +605,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libhdcpsrm \
     libQSEEComAPI \
     libSecureUILib \
     libStDrvInt \
