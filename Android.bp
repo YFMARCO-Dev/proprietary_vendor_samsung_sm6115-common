@@ -1510,6 +1510,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libminksocket",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libminksocket.so",
+            ],
+            shared_libs: [
+                "libqrtr",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libminksocket.so",
+            ],
+            shared_libs: [
+                "libqrtr",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmosal",
     owner: "samsung",
     strip: {
@@ -10206,33 +10247,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libminksocket",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminksocket.so",
-            ],
-            shared_libs: [
-                "libqrtr",
-                "libcutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
