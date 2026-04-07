@@ -416,7 +416,6 @@ PRODUCT_PACKAGES += \
     libqcci_legacy \
     libqdi \
     libqdp \
-    libqdp \
     libqmi \
     libqmi_cci \
     libqmi_client_helper \
@@ -639,7 +638,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
-    libcpion \
     libdataitems \
     libdisp-aba \
     libdisplayqos \
@@ -682,7 +680,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr_t4 \
     libmorpho_video_refiner \
     libnetmgr \
-    liboemcrypto \
     liboemcrypto \
     libofflinelog \
     libopencv \
