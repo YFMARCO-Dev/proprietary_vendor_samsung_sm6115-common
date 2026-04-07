@@ -705,6 +705,7 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     libreffeature \
     librpmb \
+    libsavscmn \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
