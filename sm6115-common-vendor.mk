@@ -436,6 +436,7 @@ PRODUCT_PACKAGES += \
     libsi \
     libsns_registry_skel \
     libsynergy_loc_api \
+    libtime_genoff \
     libtzdrmgenprov \
     libwingmetamanager \
     vendor.qti.memory.pasrmanager@1.0 \
@@ -734,7 +735,6 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libsysmon_cdsp_skel \
     libthermalclient \
-    libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
     libvkmanager_vendor \
