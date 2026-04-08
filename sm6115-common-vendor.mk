@@ -426,6 +426,7 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqrtr \
     libqti-perfd \
     libqti-perfd-client \
     libqti-util \
@@ -693,7 +694,6 @@ PRODUCT_PACKAGES += \
     libqcmaputils \
     libqdma_file_agent \
     libqisl \
-    libqrtr \
     libqseed3 \
     libqservice \
     libqsocket \
