@@ -432,6 +432,7 @@ PRODUCT_PACKAGES += \
     libqti-util \
     libqti-utils \
     libsecnativefeature \
+    libsemnativecarrierfeature \
     libsensorndkbridge \
     libsi \
     libsns_registry_skel \
@@ -718,7 +719,6 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
-    libsemnativecarrierfeature \
     libsensorcal \
     libsensorslog \
     libskeymaster4device \
