@@ -427,6 +427,7 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
+    libQSEEComAPI \
     libqti-perfd \
     libqti-perfd-client \
     libqti-util \
@@ -610,7 +611,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libhdcpsrm \
-    libQSEEComAPI \
     libSecureUILib \
     libStDrvInt \
     libadaptlaunch \
