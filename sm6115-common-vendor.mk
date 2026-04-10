@@ -440,6 +440,7 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtzdrmgenprov \
     libwingmetamanager \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.samsung.hardware.gnss@2.0 \
@@ -767,7 +768,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.cvp@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
