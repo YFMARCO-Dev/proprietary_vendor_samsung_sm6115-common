@@ -439,6 +439,7 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsynergy_loc_api \
     libtime_genoff \
+    libtrustedapploader \
     libtzdrmgenprov \
     libwingmetamanager \
     vendor.qti.hardware.dsp@1.0 \
@@ -737,7 +738,6 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libthermalclient \
     libtinyxml2_1 \
-    libtrustedapploader \
     libvkmanager_vendor \
     libvkservice \
     libxml \

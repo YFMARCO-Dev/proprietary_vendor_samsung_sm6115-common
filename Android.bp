@@ -2961,6 +2961,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtrustedapploader",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtrustedapploader.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminkdescriptor",
+                "libminksocket",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtrustedapploader.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminkdescriptor",
+                "libminksocket",
+                "libqcbor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtzdrmgenprov",
     owner: "samsung",
     strip: {
@@ -12197,34 +12240,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtinyxml2_1.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtrustedapploader",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtrustedapploader.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libminkdescriptor",
-                "libminksocket",
-                "libqcbor",
                 "libc++",
                 "libc",
                 "libm",
