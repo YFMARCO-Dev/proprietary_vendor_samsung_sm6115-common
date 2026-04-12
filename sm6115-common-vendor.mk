@@ -414,6 +414,7 @@ PRODUCT_PACKAGES += \
     libperfioctl \
     libq3dtools_adreno \
     libq3dtools_esx \
+    libqcbor \
     libqcci_legacy \
     libqdi \
     libqdp \
@@ -693,7 +694,6 @@ PRODUCT_PACKAGES += \
     libpadm \
     libpdmapper \
     libperipheral_client \
-    libqcbor \
     libqcc_file_agent \
     libqcmaputils \
     libqdma_file_agent \
