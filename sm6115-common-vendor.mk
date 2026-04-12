@@ -440,6 +440,7 @@ PRODUCT_PACKAGES += \
     libsi \
     libsns_registry_skel \
     libsynergy_loc_api \
+    libthermalclient \
     libtime_genoff \
     libtrustedapploader \
     libtzdrmgenprov \
@@ -736,7 +737,6 @@ PRODUCT_PACKAGES += \
     libstork_shared \
     libswregistrationalgo \
     libsysmon_cdsp_skel \
-    libthermalclient \
     libtinyxml2_1 \
     libvkmanager_vendor \
     libvkservice \
