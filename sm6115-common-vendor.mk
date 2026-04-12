@@ -406,6 +406,7 @@ PRODUCT_PACKAGES += \
     libloc_socket \
     liblocation_api \
     libmdmdetect \
+    libminkdescriptor \
     libminksocket \
     libmmosal \
     libnative-api \
@@ -677,7 +678,6 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libmeters \
     libmeters-ns \
-    libminkdescriptor \
     libmmcamera_cac3 \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
