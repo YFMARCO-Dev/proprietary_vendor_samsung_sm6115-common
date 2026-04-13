@@ -8631,7 +8631,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libhdcpsrm.so",
+                "proprietary/vendor/lib64/libhdcpsrm.so",
             ],
             shared_libs: [
                 "liblog",
