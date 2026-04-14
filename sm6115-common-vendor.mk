@@ -851,11 +851,12 @@ PRODUCT_PACKAGES += \
     vaultkeeperd \
     vendor.samsung.hardware.security.vaultkeeper@2.0-service \
     wt_rpmb_status \
-    xtra-daemon \
+    xtra-daemon
+
+PRODUCT_PACKAGES += \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so \
-    PRODUCT_PACKAGES +=
+    vendor_lib64_libq3dtools_adreno_so
