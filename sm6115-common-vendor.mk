@@ -685,6 +685,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr_t4 \
     libmorpho_video_refiner \
     libnetmgr \
+    libnetmgr_common \
+    libnlnetmgr \
     liboemcrypto \
     libofflinelog \
     libopencv \
