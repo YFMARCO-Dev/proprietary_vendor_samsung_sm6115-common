@@ -686,7 +686,6 @@ PRODUCT_PACKAGES += \
     libmorpho_video_refiner \
     libnetmgr \
     libnetmgr_common \
-    libnlnetmgr \
     liboemcrypto \
     libofflinelog \
     libopencv \
