@@ -8537,7 +8537,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     name: "android.hardware.gatekeeper@1.0-impl",
     owner: "samsung",
