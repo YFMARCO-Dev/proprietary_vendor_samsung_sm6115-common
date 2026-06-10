@@ -8537,6 +8537,37 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.gatekeeper@1.0-impl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.gatekeeper@1.0-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.gatekeeper@1.0",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libGPTEE_vendor",
     owner: "samsung",
@@ -14230,9 +14261,12 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service",
             ],
             shared_libs: [
+                "android.hardware.gatekeeper@1.0-impl",
                 "android.hardware.gatekeeper@1.0",
                 "libhardware",
                 "libhidlbase",
+                "libcutils",
+                "libbase",
                 "libutils",
                 "liblog",
                 "libc++",

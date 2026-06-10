@@ -608,6 +608,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0-impl \
     com.qualcomm.qti.ant@1.0_vendor \
     gatekeeper.mdfpp \
+    android.hardware.gatekeeper@1.0-impl \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
